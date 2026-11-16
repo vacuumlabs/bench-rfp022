@@ -41,7 +41,7 @@ named; none of them changes a measured cost by more than noted.
 | The claim's second nullifier `N2` (§5) | One nullifier `N` | M3 |
 | The claim's public part on LEZ: root check, nullifier accounts, cap, mint (§5) | Not built; only the private proof is measured | M1 (measured), M3 |
 | `B` commits to `H("rt", s_rt)`; a re-targeting release proves `s_rt` (§4, §6) | `B` without the re-target commitment; no re-targeting release | M4 |
-| The release pays a protocol fee, and the relayer fee goes into the relayer pool (§6) | The release pays `denom − relayer_fee` to `dest` and the fee to the named relayer | M4 |
+| The release also pays a protocol fee and a pool fee; the pool pays burn relayers and relay batches (§6) | The release pays `denom − relayer_fee` to `dest` and the relayer fee to the named relayer | M4 |
 | Real LEZ blocks: the block encoding, receipts and the reverted list (§6) | Synthetic blocks, sized like real ones, with a simplified burn record | M4 |
 | Per-token release delay: each root stores its acceptance time (§8) | Not built | M4 |
 | Failsafe: sunset, refunds with absence proofs in an indexed claim-nullifier tree, settlement over amounts (§9) | `relay_failsafe` appends claim nullifiers to a plain tree and commits counts, not amounts; no sunset, refunds or settlement in the vault | M4 |
