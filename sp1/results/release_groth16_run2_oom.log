@@ -1,0 +1,39 @@
+setup: 1.6s
+
+thread 'tokio-rt-worker' (354146) panicked at ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-recursion-gnark-ffi-6.10.0/src/ffi/docker.rs:98:61:
+failed to prove with docker: Docker command failed 
+ --- stdout: --- 
+Setting environment variables took 6.35µs
+Reading R1CS took 11.240949522s
+
+ --- stderr: --- 
+
+
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (354007) panicked at script/src/main.rs:40:62:
+prove: Unexpected(artifact not found)
+Command exited with non-zero status 101
+	Command being timed: "../target/release/release-script prove-release"
+	User time (seconds): 3396.28
+	System time (seconds): 356.56
+	Percent of CPU this job got: 1078%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:48.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14645452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 20886
+	Minor (reclaiming a frame) page faults: 20807648
+	Voluntary context switches: 10737873
+	Involuntary context switches: 385238
+	Swaps: 0
+	File system inputs: 1535018
+	File system outputs: 5504
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 101

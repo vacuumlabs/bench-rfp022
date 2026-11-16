@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = ["host", "methods", "methods/guest"]
+
+# Ethereum-side proofs: RISC Zero 3.1.0, the version the fixed on-chain verifier accepts.
+[workspace.dependencies]
+risc0-zkvm = { version = "=3.1.0", default-features = false, features = ["std"] }
+risc0-build = "=3.0.7"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+
+[patch.crates-io]
+sha2 = { git = "https://github.com/risc0/RustCrypto-hashes", tag = "sha2-v0.10.9-risczero.0" }

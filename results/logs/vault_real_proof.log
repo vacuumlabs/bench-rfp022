@@ -1,0 +1,45 @@
+Compiling 1 files with Solc 0.8.26
+Solc 0.8.26 finished in 3.28s
+Compiler run successful!
+
+Ran 1 test for test/RealProof.t.sol:RealProofTest
+[FAIL: assertion failed: 58574181148 != 999000000] test_release_with_real_groth16_proof() (gas: 3430747)
+Logs:
+  release with real Groth16 proof, execution gas 296866
+  approx tx gas (21k + calldata + execution) 325450
+
+Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 1.03s (788.76ms CPU time)
+
+Ran 1 test suite in 1.13s (1.03s CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/RealProof.t.sol:RealProofTest
+[FAIL: assertion failed: 58574181148 != 999000000] test_release_with_real_groth16_proof() (gas: 3430747)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 1 failed test
+Command exited with non-zero status 1
+	Command being timed: "forge test --match-contract RealProofTest --fork-url https://ethereum-rpc.publicnode.com -vv"
+	User time (seconds): 3.45
+	System time (seconds): 0.34
+	Percent of CPU this job got: 74%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 293280
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38
+	Minor (reclaiming a frame) page faults: 137230
+	Voluntary context switches: 3674
+	Involuntary context switches: 22
+	Swaps: 0
+	File system inputs: 184856
+	File system outputs: 632
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

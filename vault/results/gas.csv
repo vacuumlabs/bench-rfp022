@@ -1,0 +1,12 @@
+operation,gas_used,note
+deposit_usdc_first,158506,first USDC deposit into the vault
+deposit_usdc,107195,typical: vault already holds USDC
+deposit_usdt,106959,typical
+deposit_eth,87598,typical, wrapped to WETH
+relay_batch_first,90779,first batch; verifier excluded (accept-all mock); finality mock
+relay_batch,74063,steady state; any number of blocks; verifier excluded; finality mock
+release_usdc_first,144786,first release; dest and relayer new USDC holders; verifier excluded
+release_usdc,110575,dest and relayer already hold USDC; verifier excluded
+release_usdt,128294,first USDT to dest and relayer; verifier excluded
+release_eth_native,151462,paid as native ETH; verifier excluded
+fork_block,26414052,

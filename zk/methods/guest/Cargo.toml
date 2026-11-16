@@ -1,0 +1,21 @@
+[package]
+name = "bridge-guests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm.workspace = true
+serde.workspace = true
+sha2.workspace = true
+
+[[bin]]
+name = "release"
+path = "src/bin/release.rs"
+
+[[bin]]
+name = "relay_block"
+path = "src/bin/relay_block.rs"
+
+[[bin]]
+name = "relay_range"
+path = "src/bin/relay_range.rs"

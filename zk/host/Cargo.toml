@@ -1,0 +1,14 @@
+[package]
+name = "bridge-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bridge-methods = { path = "../methods" }
+bridge-guests = { path = "../methods/guest" }
+risc0-zkvm = { version = "=3.1.0" }
+risc0-ethereum-contracts = "=3.1.0"
+serde.workspace = true
+serde_json = "1"
+hex = "0.4"
+sha2.workspace = true

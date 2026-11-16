@@ -1,0 +1,20 @@
+[package]
+name = "pol-guest"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "groth16_bn254"
+path = "src/bin/groth16_bn254.rs"
+
+[[bin]]
+name = "groth16_bn254_fixed"
+path = "src/bin/groth16_bn254_fixed.rs"
+
+[dependencies]
+risc0-zkvm.workspace = true
+serde.workspace = true
+substrate-bn.workspace = true

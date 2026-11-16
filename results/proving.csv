@@ -1,0 +1,12 @@
+step,program,result_line,peak_rss_mib,wall_s
+claim_prove,lez,PROVED claim results/inputs/claim.bin total_cycles=1048576 user_cycles=573227 segments=1 prove_s=157.9 ,9347,158
+release_prove,zk,PROVED prove release results/inputs/release.bin total_cycles=262144 user_cycles=225767 segments=1 prove_s=31.5 receipt_bytes=225512 ,2362,31
+relay64k_prove,zk,PROVED prove relay results/inputs/relay_64k.bin total_cycles=1048576 user_cycles=576954 segments=1 prove_s=104.2 receipt_bytes=226312 ,9367,104
+relay1m_prove,zk,PROVED prove relay results/inputs/relay_1m.bin total_cycles=8388608 user_cycles=3951028 segments=8 prove_s=882.4 receipt_bytes=226312 ,9382,881
+release_groth16,zk,PROVED groth16 release results/inputs/release.bin total_cycles=262144 user_cycles=225767 segments=1 prove_s=290.1 receipt_bytes=3556 wrote ../vault/proofs/release.json (seal 260 bytes) ,2362,289
+vault_real_proof,vault,FAILED rc=1 (see results/logs/vault_real_proof.log),286,5
+release_groth16_rerun_vault,vault,PASSED (assertion fix) release execution gas 294902; approx tx gas 323486,286,5
+release_groth16_rerun,zk,PROVED groth16 release prove_s=71.5 (rerun; image already pulled) / 70.6 (third run); container peak 7.45 GiB (docker stats),2363,72
+claim32_prove,lez,PROVED claim results/inputs/claim_d31.bin total_cycles=1179648 user_cycles=977403 segments=2 prove_s=177.2 ,9376,
+claim300_prove,lez,PROVED claim results/inputs/claim_d299.bin total_cycles=5242880 user_cycles=4221414 segments=5 prove_s=674.3 ,9376,
+release_groth16_review1,zk,PROVED groth16 release results/inputs/release.bin total_cycles=262144 user_cycles=227107 segments=1 prove_s=74.1 receipt_bytes=3556 ,2363,

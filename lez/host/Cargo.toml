@@ -1,0 +1,16 @@
+[package]
+name = "claim-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+claim-methods = { path = "../methods" }
+risc0-zkvm = { version = "=3.0.5" }
+serde.workspace = true
+serde_json = "1"
+hex = "0.4"
+sha2 = "0.10"
+alloy = { version = "2.5", default-features = false, features = ["rpc-types", "consensus", "eips"] }
+alloy-primitives = "1.6"
+alloy-trie = "0.9"
+alloy-rlp = "0.3"

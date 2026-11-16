@@ -1,0 +1,25 @@
+PROVED groth16 release results/inputs/release.bin total_cycles=262144 user_cycles=227107 segments=1 prove_s=74.1 receipt_bytes=3556
+wrote ../vault/proofs/release.json (seal 260 bytes)
+	Command being timed: "./target/release/bridge-bench groth16 release results/inputs/release.bin"
+	User time (seconds): 862.82
+	System time (seconds): 5.19
+	Percent of CPU this job got: 1176%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:13.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2419240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 1305174
+	Voluntary context switches: 44585
+	Involuntary context switches: 74480
+	Swaps: 0
+	File system inputs: 32768
+	File system outputs: 2152
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,56 @@
+[2m2026-11-16T09:46:32.860996Z[0m [32m INFO[0m [sp1] groth16 circuit artifacts are already installed at ~/.sp1/circuits/groth16/v6.1.0. if you want to re-download them, delete the directory
+[2m2026-11-16T09:46:34.682916Z[0m [32m INFO[0m Running prove in docker
+[2m2026-11-16T09:47:01.537840Z[0m [33m WARN[0m Memory usage is high: 95.50%, we recommend using the prover network
+[2m2026-11-16T09:47:11.543134Z[0m [33m WARN[0m Memory usage is high: 96.16%, we recommend using the prover network
+[2m2026-11-16T09:47:21.548560Z[0m [33m WARN[0m Memory usage is high: 97.64%, we recommend using the prover network
+[2m2026-11-16T09:47:30.317344Z[0m [33m WARN[0m Memory usage is high: 97.50%, we recommend using the prover network
+[2m2026-11-16T09:47:40.322665Z[0m [33m WARN[0m Memory usage is high: 97.94%, we recommend using the prover network
+[2m2026-11-16T09:47:50.322935Z[0m [33m WARN[0m Memory usage is high: 97.80%, we recommend using the prover network
+[2m2026-11-16T09:47:59.137771Z[0m [33m WARN[0m Memory usage is high: 97.88%, we recommend using the prover network
+[2m2026-11-16T09:48:09.138389Z[0m [33m WARN[0m Memory usage is high: 98.15%, we recommend using the prover network
+[2m2026-11-16T09:48:19.138894Z[0m [33m WARN[0m Memory usage is high: 97.83%, we recommend using the prover network
+[2m2026-11-16T09:48:27.907860Z[0m [33m WARN[0m Memory usage is high: 97.65%, we recommend using the prover network
+[2m2026-11-16T09:48:38.902812Z[0m [33m WARN[0m Memory usage is high: 95.56%, we recommend using the prover network
+[2m2026-11-16T09:48:40.529261Z[0m [31mERROR[0m Failed to run `docker run`: "docker" "run" "--rm" "-v" "~/.sp1/circuits/groth16/v6.1.0:/circuit" "-v" "/tmp/.tmp1UbmzL:/witness" "-v" "/tmp/.tmpKbQ5zS:/output" "ghcr.io/succinctlabs/sp1-gnark:v6.1.0" "prove" "--system" "groth16" "/circuit" "/witness" "/output"
+[2m2026-11-16T09:48:40.530487Z[0m [31mERROR[0m status: ExitStatus(unix_wait_status(35072))
+[2m2026-11-16T09:48:40.530672Z[0m [31mERROR[0m stderr: ""
+
+thread 'main' (378763) panicked at ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-recursion-gnark-ffi-6.10.0/src/ffi/docker.rs:98:61:
+failed to prove with docker: Docker command failed 
+ --- stdout: --- 
+Setting environment variables took 6.672µs
+Reading R1CS took 21.619448969s
+Reading proving key took 8.668818451s
+Reading witness file took 57.841672ms
+Deserializing JSON data took 168.6716ms
+Generating witness took 2.643739429s
+[90m09:47:53[0m DBG constraint system solver done [36mnbConstraints=[0m15972262 [36mtook=[0m47788.714019
+
+ --- stderr: --- 
+
+
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+Command exited with non-zero status 101
+	Command being timed: "../target/release/split groth16"
+	User time (seconds): 0.33
+	System time (seconds): 2.14
+	Percent of CPU this job got: 1%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:08.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 105656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4986
+	Minor (reclaiming a frame) page faults: 51124
+	Voluntary context switches: 25892
+	Involuntary context switches: 942
+	Swaps: 0
+	File system inputs: 1392746
+	File system outputs: 5552
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 101

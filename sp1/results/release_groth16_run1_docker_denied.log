@@ -1,0 +1,42 @@
+setup: 1.6s
+[sp1] downloaded https://sp1-circuits.s3-us-east-2.amazonaws.com/v6.1.0-groth16.tar.gz to ~/.sp1/circuits/groth16/v6.1.0.incomplete.Ip6CkA
+
+thread 'tokio-rt-worker' (353557) panicked at ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sp1-recursion-gnark-ffi-6.10.0/src/ffi/docker.rs:98:61:
+failed to prove with docker: Docker command failed 
+ --- stdout: --- 
+
+ --- stderr: --- 
+Unable to find image 'ghcr.io/succinctlabs/sp1-gnark:v6.1.0' locally
+docker: Error response from daemon: error from registry: denied
+
+Run 'docker run --help' for more information
+
+
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (352882) panicked at script/src/main.rs:40:62:
+prove: Unexpected(artifact not found)
+Command exited with non-zero status 101
+	Command being timed: "../target/release/release-script prove-release"
+	User time (seconds): 3498.43
+	System time (seconds): 412.80
+	Percent of CPU this job got: 386%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 16:52.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14689588
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 26656
+	Minor (reclaiming a frame) page faults: 19413728
+	Voluntary context switches: 10581367
+	Involuntary context switches: 1469129
+	Swaps: 0
+	File system inputs: 12835654
+	File system outputs: 28573736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 101

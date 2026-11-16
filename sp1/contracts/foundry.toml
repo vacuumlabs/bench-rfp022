@@ -1,0 +1,13 @@
+[profile.default]
+src = "test"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.26"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 10000
+remappings = [
+  "forge-std/=lib/forge-std/src/",
+  "sp1/=lib/sp1-contracts/contracts/src/",
+]
+fs_permissions = [{ access = "read", path = "./fixtures" }]

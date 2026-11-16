@@ -1,0 +1,39 @@
+[2m2026-11-16T09:42:39.702485Z[0m [32m INFO[0m [1mprove shrink[0m: close [3mtime.busy[0m[2m=[0m1.67s [3mtime.idle[0m[2m=[0m15.3s
+[2m2026-11-16T09:44:00.589829Z[0m [33m WARN[0m Memory usage is high: 80.92%, we recommend using the prover network
+[2m2026-11-16T09:44:09.376151Z[0m [33m WARN[0m Memory usage is high: 84.79%, we recommend using the prover network
+[2m2026-11-16T09:44:19.376354Z[0m [33m WARN[0m Memory usage is high: 84.79%, we recommend using the prover network
+[2m2026-11-16T09:44:29.376558Z[0m [33m WARN[0m Memory usage is high: 84.75%, we recommend using the prover network
+[2m2026-11-16T09:44:38.162251Z[0m [33m WARN[0m Memory usage is high: 84.68%, we recommend using the prover network
+[2m2026-11-16T09:44:48.163411Z[0m [33m WARN[0m Memory usage is high: 86.19%, we recommend using the prover network
+[2m2026-11-16T09:44:58.163846Z[0m [33m WARN[0m Memory usage is high: 87.40%, we recommend using the prover network
+[2m2026-11-16T09:45:06.945665Z[0m [33m WARN[0m Memory usage is high: 92.95%, we recommend using the prover network
+[2m2026-11-16T09:45:16.951426Z[0m [33m WARN[0m Memory usage is high: 92.71%, we recommend using the prover network
+[2m2026-11-16T09:45:26.963431Z[0m [33m WARN[0m Memory usage is high: 98.88%, we recommend using the prover network
+[2m2026-11-16T09:45:45.723591Z[0m [33m WARN[0m Memory usage is high: 80.01%, we recommend using the prover network
+[2m2026-11-16T09:45:55.724496Z[0m [33m WARN[0m Memory usage is high: 81.99%, we recommend using the prover network
+[2m2026-11-16T09:46:04.487259Z[0m [33m WARN[0m Memory usage is high: 82.38%, we recommend using the prover network
+[2m2026-11-16T09:46:11.042838Z[0m [32m INFO[0m [1mprove wrap[0m: close [3mtime.busy[0m[2m=[0m40.0s [3mtime.idle[0m[2m=[0m139s
+stage wrap: 282.2s
+	Command being timed: "../target/release/split wrap"
+	User time (seconds): 3074.12
+	System time (seconds): 164.40
+	Percent of CPU this job got: 1193%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:31.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 14838556
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 70926
+	Minor (reclaiming a frame) page faults: 8385753
+	Voluntary context switches: 2832463
+	Involuntary context switches: 366922
+	Swaps: 0
+	File system inputs: 1052312
+	File system outputs: 2664
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,18 @@
+[package]
+name = "claim-guest"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "claim"
+path = "src/main.rs"
+
+[dependencies]
+risc0-zkvm.workspace = true
+serde.workspace = true
+sha2 = "0.10"
+alloy-primitives = { version = "1.6", features = ["tiny-keccak"] }
+alloy-trie = "0.9"
+alloy-rlp = "0.3"
+alloy-consensus = { version = "1.8", default-features = false }
+alloy-eips = { version = "1.8", default-features = false }

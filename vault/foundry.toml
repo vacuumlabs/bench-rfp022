@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.26"
+evm_version = "cancun"
+via_ir = true
+optimizer = true
+optimizer_runs = 10000
+remappings = [
+  "forge-std/=lib/forge-std/src/",
+  "openzeppelin/=lib/openzeppelin-contracts/",
+  "risc0/=lib/risc0-ethereum/contracts/src/",
+  "risc0-test/=lib/risc0-ethereum/contracts/test/",
+]
+fs_permissions = [{ access = "read", path = "./proofs" }]
