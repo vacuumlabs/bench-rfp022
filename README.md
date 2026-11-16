@@ -46,6 +46,10 @@ named; none of them changes a measured cost by more than noted.
 | Per-token release delay: each root stores its acceptance time (§8) | Not built | M4 |
 | Failsafe: sunset, refunds with absence proofs in an indexed claim-nullifier tree, settlement over amounts (§9) | `relay_failsafe` appends claim nullifiers to a plain tree and commits counts, not amounts; no sunset, refunds or settlement in the vault | M4 |
 | Second release path: an independently written SP1 relay and release, the vault's second root and tip, the switch at sunset (§9) | A port of our RISC Zero code for measurement only (see `sp1/`); not wired into the vault | M4 |
+| Configuration id in every program record (burns, the sunset), and in the burn leaf `H("leaf", cfg, token, denom, B)`; the relay keeps only its configuration's records (§4, §6) | The relay filters by program id; the leaf is `H("leaf", token, denom, B)`. Safe only while one program serves one configuration | M4 |
+| The program refuses a `B` already burned (§6) | Not built (no LEZ program in the bench) | M4 |
+| Pool and protocol fees credited in the vault and withdrawn separately (§6) | Fees are pushed to the relayer at release | M4 |
+| Settlement over aggregates: unclaimed deposits counted as deposited minus claimed, no registration window (§9) | Not built | M4 |
 | Admin and freeze through the RFP-001/RFP-002 authorities, with a two-step admin transfer and immutable bounds (§8) | Single-address admin and freezer; a cap of 0 means "no cap" | M3 |
 
 ## License

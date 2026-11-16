@@ -24,7 +24,8 @@ Run (Foundry):
 forge test --fork-url <mainnet RPC> -vv
 ```
 
-The §13 figures were measured at block 26398402 (`--fork-block-number 26398402`). Pinning that
-block now needs an archive RPC; at the current block the tests pass the same.
+The forge tests were written against block 26398402 (`--fork-block-number 26398402`); the
+real-transaction gas in `results/gas.csv` (the proposal's deposit figures) ran at block 26414052.
+Pinning either block now needs an archive RPC; at the current block the tests pass the same.
 `scripts/gas_anvil.sh [RPC]` measures the same operations as real transactions on an anvil
 fork and writes `results/gas.csv`.
