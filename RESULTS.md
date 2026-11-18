@@ -1,6 +1,6 @@
 # RFP-022 bench: results
 
-Prototype measurements for the design in the Isthmus proposal (RFP-022 with RFP-021). Not audited code. Overview and gaps: [`README.md`](README.md).
+Prototype measurements for the design in the Slipgate proposal (RFP-022 with RFP-021). Not audited code. Overview and gaps: [`README.md`](README.md).
 
 | Folder | What | RISC Zero |
 |---|---|---|

@@ -1,6 +1,6 @@
-# Isthmus bench (RFP-022, with RFP-021)
+# Slipgate bench (RFP-022, with RFP-021)
 
-These are the prototypes and measurements behind the proposal's §13 tables. This is bench code
+These are the prototypes and measurements behind the proposal's §13. This is bench code
 written to measure the design before filing. It is not the deliverable and has not been audited.
 Results and their history: [`RESULTS.md`](RESULTS.md).
 
@@ -31,7 +31,7 @@ Docker for Groth16. For `sp1/`, the SP1 toolchain (`sp1up`).
 
 ## Where the bench lags the design
 
-The proposal describes the design after two adversarial reviews. Some of the changes those
+The proposal describes the design after its adversarial reviews. Some of the changes those
 reviews produced are in the text but not yet in this bench. Each is built in the milestone
 named; none of them changes a measured cost by more than noted.
 

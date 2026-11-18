@@ -15,7 +15,7 @@ interface IWETH is IERC20 {
     function withdraw(uint256) external;
 }
 
-/// Measurement prototype of the RFP-022 vault (design: the Isthmus proposal; gaps: ../../README.md).
+/// Measurement prototype of the RFP-022 vault (design: the Slipgate proposal; gaps: ../../README.md).
 /// Everything that decides what is accepted is immutable: verifier, image ids, pairing.
 /// Admin and freeze are minimal single-address roles here; the proposal uses the
 /// RFP-001/002 semantics. Not audited, not for deployment.
